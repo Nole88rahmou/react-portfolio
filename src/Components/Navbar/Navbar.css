@@ -5,6 +5,27 @@
     margin: 20px 170px;
 }
 
+.navbar-title{
+    position: relative;
+    
+}
+
+.navbar-title p{
+    font-size: 60px;
+    font-weight: 500;
+    font-style: emblema one;
+}
+
+.navbar-title img{
+    position: absolute;
+    transform: rotate(6deg);
+    width: 120px;
+    height: 60px;
+    bottom: -10px;
+    right: -40px;
+    z-index: -1;
+}
+
 .nav-menu{
     display: flex;
     align-items: center;

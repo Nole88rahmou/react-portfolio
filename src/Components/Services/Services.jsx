@@ -1,6 +1,7 @@
 import React from 'react'
 import './Services.css'
 import { ArrowRight } from "lucide-react";
+import theme_pattern from '../../assets/theme_pattern.png'
 
 const Services = () => {
     const servicesData = [
@@ -29,7 +30,7 @@ const Services = () => {
     <div className='services'>
         <div className="services-title">
             <h1>My Services</h1>
-            <img src="theme_pattern" alt="xczz" />
+            <img src={theme_pattern} alt="xczz" />
         </div>
         <div className="services-container">
             {servicesData.map((service) => {

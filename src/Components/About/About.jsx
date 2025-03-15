@@ -1,13 +1,14 @@
 import React from 'react'
 import './About.css'
 import profile_img from '../../assets/profile-img.jpg'
+import theme_pattern from '../../assets/theme_pattern.png'
 
 const About = () => {
     return (
         <div className="about">
             <div className="about-title">
                 <h1>About me</h1>
-                <img src="add pattern theme" alt="dfsdf" />
+                <img src={theme_pattern} alt="dfsdf" />
             </div>
             <div className="about-sections">
                 <div className="about-left">

@@ -1,10 +1,14 @@
 import React from 'react'
 import './Navbar.css'
+import theme_pattern from '../../assets/theme_pattern.png'
 
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <img src='asd' alt='Logo' />
+            <div className="navbar-title">
+                <p>Nole</p>
+                <img src={theme_pattern} alt='Logo' />
+            </div>
             <ul className='nav-menu'>
                 <li>Home</li>
                 <li>About Me</li>

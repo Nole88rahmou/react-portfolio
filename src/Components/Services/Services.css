@@ -19,9 +19,11 @@
 
 .services-title img {
     position: absolute;
-    bottom: 0;
+    bottom: -45px;
     right: 0;
     z-index: -1;
+    width: 300px;
+    transform: rotate(6deg);
 }
 
 .service-format{
