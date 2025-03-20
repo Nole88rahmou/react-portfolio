@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 20px 100px;
+    position: relative;
 }
 
 .navbar-title{
@@ -11,7 +12,7 @@
 }
 
 .navbar-title p{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     font-style: emblema one;
 }
@@ -19,10 +20,10 @@
 .navbar-title img{
     position: absolute;
     transform: rotate(6deg);
-    width: 120px;
-    height: 60px;
-    bottom: -10px;
-    right: -40px;
+    width: 90px;
+    height: 45px;
+    bottom: -8px;
+    right: -28px;
     z-index: -1;
 }
 
@@ -33,16 +34,100 @@
     gap: 60px;
     font-size: 20px;
 }
+.nav-menu img {
+    transform: rotate(15deg);
+    display: flex;
+    margin: auto;
+    /* width: 80%;
+    height: 20%; */
+}
+
+
+
+.nav-menu li  {
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-menu li p{
+    font-size: 17px;
+}
+
+.nav-menu li:hover {
+    transition: .3s;
+    background: linear-gradient(267deg, #DA7C25 0.36%,  #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .nav-connect{
-    padding: 20px 40px;
+    padding: 19px 38px;
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%,  #B923E1 102.06%);
-    font-size:22px ;
+    font-size:20px ;
     transition: .5s;
     cursor: pointer;
 }
 
 .nav-connect:hover{
     transform: scale(1.05);
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar svg{
+    display: none;
+}
+
+.nav-menu svg{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .navbar svg{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    }
+    .nav-menu svg{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right .5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
 }

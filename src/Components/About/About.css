@@ -18,16 +18,16 @@
 
 .about-title h1{
     padding: 0 30px;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
 }
 
 .about-title img {
     position: absolute;
-    bottom: -44px;
+    bottom: -24px;
     right: 0;
     z-index: -1;
-    width: 300px;
+    width: 200px;
     transform: rotate(5deg);
 }
 
@@ -114,4 +114,56 @@
 .about-achievement:hover{
     transform: scale(1.12);
     transition: .5s;
+}
+
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        position: absolute;
+        bottom: -23px;
+        right: -7px;
+        z-index: -1;
+        width: 160px;
+        transform: rotate(5deg);
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+        font-size: 20px;
+    }
+    .about-skill hr{
+        height: 6px;
+    }
+    .about-achievement{
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .about-achievement h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .about-achievement p{
+        text-align: center;
+        font-size: 15px;
+    }
 }
