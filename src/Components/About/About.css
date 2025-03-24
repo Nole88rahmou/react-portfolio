@@ -8,8 +8,9 @@
 }
 
 .about-left img {
-    width: 400px;
-    height: 550px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
 }
 
 .about-title{
@@ -46,7 +47,7 @@
      display: flex;
      flex-direction: column;
      gap: 20px;
-     font-size: 24px;
+     font-size: 21px;
      font-weight: 500;
 }
 
@@ -64,7 +65,7 @@
 
 .about-skill p{
     min-width: 150px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -72,7 +73,7 @@
     outline: none;
     border: none;
     /* width: 50%; */
-    height: 8px;
+    height: 6px;
     border-radius: 50px;
     background: linear-gradient(264deg, #DF8908 -5%, #B415FF 106%);
 }
@@ -93,7 +94,7 @@
 }
 
 .about-achievement h1{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     background: linear-gradient(270deg, #DF8908 50%, #B415FF 90.2%);
     background-clip: text;
@@ -102,7 +103,7 @@
 }
 
 .about-achievement p{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -116,7 +117,61 @@
     transition: .5s;
 }
 
-@media(max-width:768px){
+@media(max-width: 480px){
+    .about{
+        gap: 80px;
+        margin: 50px 40px;
+    }
+    .about-title h1{
+        font-size: 45px;
+        padding: 0;
+    }
+    .about-title img{
+        position: absolute;
+        bottom: -23px;
+        right: -7px;
+        z-index: -1;
+        width: 160px;
+        transform: rotate(5deg);
+    }
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+        font-size: 20px;
+    }
+    .about-skill hr{
+        height: 6px;
+    }
+    .about-achievement{
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .about-achievement h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .about-achievement p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .about-achievements{
+        gap: 20px;
+    }
+}
+
+@media(min-width: 481px) and (max-width:768px){
     .about{
         gap: 80px;
         margin: 50px 70px;
@@ -165,5 +220,29 @@
     .about-achievement p{
         text-align: center;
         font-size: 15px;
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    .about{
+        margin: 80px 47px;
+    }
+    .about-title h1{
+        font-size: 65px;
+    }
+    .about-sections{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-achievements{
+        gap: 40px;
+    }
+    .about-achievement p{
+        text-align: center;
+    }
+}
+@media(min-width:1025px) and (max-width:1280px){
+    .about{
+        margin: 80px 80px;
     }
 }

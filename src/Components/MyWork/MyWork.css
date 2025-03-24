@@ -13,15 +13,15 @@
 
 .mywork-title h1{
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
 }
 
 .mywork-title img{
     transform: rotate(5deg);
-    width: 300px;
+    width: 200px;
     position: absolute;
-    bottom: -45px;
+    bottom: -27px;
     right: 10px;
     z-index: -1;
 }
@@ -33,8 +33,8 @@
 }
 
 .mywork-container img{
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
     box-sizing: border-box;
     transition: .3s;
@@ -53,8 +53,8 @@
     gap: 15px;
     border-radius: 50px;
     border: 2px solid white;
-    padding: 30px 60px;
-    font-size: 22px;
+    padding: 25px 55px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 80px;
     transition: .3s;
@@ -66,15 +66,51 @@
     transition: .6s;
 }
 
-@media(max-width: 768px){
+@media(max-width:480px){
     .mywork{
         gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
+        margin: 50px 30px;
+        align-items: center;
     }
     .mywork-title h1{
         padding: 0;
-        font-size: 50px;
+        font-size: 45px;
+        font-weight:600 ;
+    }
+    .mywork-title img{
+        width: 130px;
+        margin-right: -20px;
+        bottom: -13px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mywork img{
+        /* width: 100%;
+        height: 100%; */
+    }
+    .mywork-container img{
+        width: 300px;
+        height: 200px;
+    }
+    .mywork-showmore{
+        padding: 15px 35px;
+        font-size: 15px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: center;
+    }
+    .mywork-title h1{
+        padding: 0;
+        font-size: 49px;
         font-weight:600 ;
     }
     .mywork-title img{
@@ -83,17 +119,45 @@
         bottom: -10px;
     }
     .mywork-container{
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     .mywork img{
         /* width: 100%;
         height: 100%; */
+    }
+    .mywork-container img{
+        width: 330px;
+        height: 230px;
     }
     .mywork-showmore{
         padding: 20px 40px;
         font-size: 15px;
         margin: 50px auto;
         cursor: pointer;
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    .mywork{
+        margin: 80px 140px;
+    }
+    .mywork-title h1{
+        font-size: 65px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .mywork-container img{
+        width: 320px;
+        height: 220px;
+    }
+    .mywork-showmore{
+        padding: 23px 55px;
+    }
+}
+@media(min-width:1025px) and (max-width:1280px){
+    .mywork-container img{
+        width: 300px;
+        height: 220px;
     }
 }
